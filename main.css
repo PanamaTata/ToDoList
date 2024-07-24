@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+     justify-content: center; 
+    font-family: Roboto, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./img/SkyHD.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    background: transparent;
+    border: 2px solid #e6b7eca1;
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+}
+
+h1 {
+
+    color: #eee;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.todo-input {
+    flex: 1;
+    outline: none;
+    padding: 10px 10px 10px 20px;
+    background-color: transparent;
+    border: 2px solid #e6b7eca1;
+    border-radius: 30px;
+    color: #eee;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.todo-input::placeholder {
+    color: #bfbfbf;
+}
+
+.add-button {
+    border: none;
+    outline: none;
+    background: #e6b7eca1;
+    color: #fff;
+    font-size: 35px;
+    cursor: pointer;
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.empty-image {
+    margin: 5px auto 0;
+    height: 170px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.todo-list {
+    list-style-type: none;
+}
+
+.todo-list-item  {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.dlt-btn {
+    background: url(./img/bin.png);
+    background-color: #8b2299a1;
+    border: none;
+        outline: none;
+        background-size: cover;
+       /* background: #5d1467a1; */
+        color: #fff;
+        font-size: 35px;
+        cursor: pointer;
+        border-radius: 40px;
+        width: 40px;
+        height: 40px;
+
+}
+
+.todo-list {
+    width: 340px;
+    height: 200px;
+    overflow: overlay;
+}
+
+.todo-list::-webkit-scrollbar-track {
+    background: #c3bfbf;
+    border-radius: 20px;
+}
+
+.todo-list::-webkit-scrollbar {
+    width: 0;
+}
+
+.todo-list:hover::-webkit-scrollbar{
+    width: 7px;
+}
+
+.todo-list::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 20px;
+}
+
+
